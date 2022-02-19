@@ -1,7 +1,7 @@
 {
-  "name": "replace-this-with-project-name",
+  "name": "stegbench",
   "version": "0.0.0",
-  "description": "... add project description here ...",
+  "description": "Comprehensive open-source benchmarks for steganographic algorithms",
   "main": "src/index.js",
   "scripts": {
     "test": "npm run style && npm run unit",
@@ -18,12 +18,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/multifactor/replace-this-with-project-name.git"
+    "url": "git+https://github.com/multifactor/stegbench.git"
   },
   "author": "Vivek Nair (https://nair.me) <vivek@nair.me>",
   "license": "UNLICENSED",
   "bugs": {
-    "url": "https://github.com/multifactor/replace-this-with-project-name/issues"
+    "url": "https://github.com/multifactor/stegbench/issues"
   },
   "files": [
     "src/**",
@@ -31,7 +31,7 @@
     "index.js",
     "index.min.js"
   ],
-  "homepage": "https://github.com/multifactor/replace-this-with-project-name#readme",
+  "homepage": "https://github.com/multifactor/stegbench#readme",
   "devDependencies": {
     "base64-loader": "^1.0.0",
     "buffer": "^6.0.3",

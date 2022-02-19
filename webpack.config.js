@@ -9,7 +9,7 @@ module.exports = {
         publicPath: '/',
         filename: 'index.js',
         library: {
-          name: 'replace-this-with-project-name',
+          name: 'stegbench',
           type: 'umd'
         }
     },
