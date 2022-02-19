@@ -18,12 +18,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/multifactor/stegbench.git"
+    "url": "git+https://github.com/stegbench/stegbench.git"
   },
   "author": "Vivek Nair (https://nair.me) <vivek@nair.me>",
   "license": "UNLICENSED",
   "bugs": {
-    "url": "https://github.com/multifactor/stegbench/issues"
+    "url": "https://github.com/stegbench/stegbench/issues"
   },
   "files": [
     "src/**",
@@ -31,7 +31,7 @@
     "index.js",
     "index.min.js"
   ],
-  "homepage": "https://github.com/multifactor/stegbench#readme",
+  "homepage": "https://github.com/stegbench/stegbench#readme",
   "devDependencies": {
     "base64-loader": "^1.0.0",
     "buffer": "^6.0.3",
