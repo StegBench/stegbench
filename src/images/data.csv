@@ -1,0 +1,12 @@
+Number,Name,File Name,File Size,Format,Description,Dominant Colors,Quality,Resolution,Aspect Ratio,Orientation,Width,Height,Source,URL
+0,Image 0,image0.png,1.77 MB,png,Composite,All,100,720p,16:9,Landscape,1280,720,Multiple,
+1,Image 1,image1.jpg,4.01 MB,jpg,Astronomy,Reds,90,4K,16:9,Landscape,3840,2160,NASA,https://images.nasa.gov/details-PIA03654
+2,Image 2,image2.jpg,1.84 MB,jpg,Nature,"Greens, Blues",100,1080p,16:9,Landscape,1920,1080,Wikimedia Commons,"https://commons.wikimedia.org/wiki/File:Seljalandsfoss,_Su%C3%B0urland,_Islandia,_2014-08-16,_DD_201-203_HDR.JPG"
+3,Image 3,image3.gif,186 KB,gif,Portrait,Reds,100,480p,9:16,Portrait,480,858,USAP,https://nair.me/antarctica/USAP20211217_075108.jpg
+4,Image 4,image4.jpg,29.9 KB,jpg,Space,"Blues, Black",85,240p,9:16,Portrait,240,426,NASA,https://images.nasa.gov/details-PIA00342
+5,Image 5,image5.gif,392 B,gif,QR code,"Black, White",100,21px,1:1,Square,21,21,Programmatic,
+6,Image 6,image6.png,617 KB,png,Benchmark,All,100,512px,1:1,Square,512,512,Programmatic,
+7,Image 7,image7.png,22.6 MB,png,Wildlife,"Greys, Blues, Browns",100,4K,4:3,Landscape,4032,3024,USAP,https://nair.me/antarctica/USAP20211215_174435.png
+8,Image 8,image8.webp,83.6 KB,webp,Digital Art,"Greys, Reds, Greens",95,600px,3:4,Portrait,450,600,Wikimedia Commons,"https://commons.wikimedia.org/wiki/File:Simply_Red,_desaturated.jpg"
+9,Image 9,image9.webp,36.2 KB,webp,Diagram,"Black, White",80,1128p,3:2,Landscape,1128,752,USPTO,https://nair.me/US63266610.pdf#page=54
+10,Image 10,image10.png,162 KB,png,3D Render,Greys,100,450px,2:3,Portrait,300,450,Wikimedia Commons,https://commons.wikimedia.org/wiki/File:Bearing_render.png
