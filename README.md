@@ -82,22 +82,22 @@ Resilience is scored out of 2.5 points for each test for a total of 40 points. F
 Once again, the slight preference for no result over incorrect results reflects the fact that algorithms returning the wrong result may cause an incorrect action to be taken, favoring algorithms that use safety mechanisms like checksums to prevent false results.
 
 Specifically, the tests manipulate the results in the following ways:
-- Test 1: Scale result to 852x480 px.
-- Test 2: Scale result to 320x240 px (does not preserve aspect ratio).
-- Test 3: Scale result to 256x144 px.
-- Test 4: Scale result to 2560x1440 px.
-- Test 5: Convert result to JPEG with 98% quality.
-- Test 6: Convert result to JPEG with 75% quality.
-- Test 7: Add 1% random noise to result.
-- Test 8: Add 10% random noise to result.
-- Test 9: Rotate result 90 degrees counterclockwise (720x1280 output).
-- Test 10: Mirror result horizontally (across y axis).
-- Test 11: Mirror result vertically (across x axis).
-- Test 12: Crop result to 640x360 (bottom left corner).
-- Test 13: Crop result to 320x180 (center).
-- Test 14: Add overlay to result (see [overlay.png](https://github.com/StegBench/stegbench/blob/main/src/images/overlay.png)).
-- Test 15: Increase image brightness by 1%.
-- Test 16: Decrease image contrast by 15%.
+- Test 1 (scale-down-sm): Scale result to 852x480 px.
+- Test 2 (scale-down-nonlinear): Scale result to 320x240 px (does not preserve aspect ratio).
+- Test 3 (scale-down-xs): Scale result to 256x144 px.
+- Test 4 (scale-up): Scale result to 2560x1440 px.
+- Test 5 (compress-98): Convert result to JPEG with 98% quality.
+- Test 6 (compress-75): Convert result to JPEG with 75% quality.
+- Test 7 (noise-1): Add 1% random noise to result.
+- Test 8 (noise-10): Add 10% random noise to result.
+- Test 9 (rotate-ccw): Rotate result 90 degrees counterclockwise (720x1280 output).
+- Test 10 (mirror-y): Mirror result horizontally (across y axis).
+- Test 11 (mirror-x): Mirror result vertically (across x axis).
+- Test 12 (crop-corner): Crop result to 640x360 (bottom left corner).
+- Test 13 (crop-center): Crop result to 320x180 (center).
+- Test 14 (overlay): Add overlay to result (see [overlay.png](https://github.com/StegBench/stegbench/blob/main/src/images/overlay.png)).
+- Test 15 (brightness): Increase image brightness by 5%.
+- Test 16 (contrast): Decrease image contrast by 15%.
 
 ## Test Images
 Below is a summary of the test images used by the benchmark, all of which are licensed for free use, whereby images 1-10 are used for Stage 1 (speed, subtlety, and correctness) testing and image 0 is used for Stage 2 (resilience) testing.

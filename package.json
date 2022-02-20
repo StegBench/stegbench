@@ -33,6 +33,7 @@
     "standard": "^16.0.4"
   },
   "dependencies": {
-    "jimp": "^0.16.1"
+    "jimp": "^0.16.1",
+    "sharp": "^0.30.1"
   }
 }
