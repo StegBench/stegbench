@@ -16,4 +16,4 @@ async function StegBench128s (encode, decode) {
   return stegbench(encode, decode, 16, true)
 }
 
-module.exports = {StegBench32, StegBench32s, StegBench128, StegBench128s}
+module.exports = { StegBench32, StegBench32s, StegBench128, StegBench128s }

@@ -4,36 +4,36 @@ const crypto = require('crypto')
 const Jimp = require('jimp')
 const sharp = require('sharp')
 
-const cases = [];
+const cases = []
 
 cases.push({
   name: 'scale-down-sm',
-  function: (result) => sharp(result).resize(852,480).toBuffer()
+  function: (result) => sharp(result).resize(852, 480).toBuffer()
 })
 
 cases.push({
   name: 'scale-down-nonlinear',
-  function: (result) => sharp(result).resize(320,240).toBuffer()
+  function: (result) => sharp(result).resize(320, 240).toBuffer()
 })
 
 cases.push({
   name: 'scale-down-xs',
-  function: (result) => sharp(result).resize(256,144).toBuffer()
+  function: (result) => sharp(result).resize(256, 144).toBuffer()
 })
 
 cases.push({
   name: 'scale-up',
-  function: (result) => sharp(result).resize(2560,1440).toBuffer()
+  function: (result) => sharp(result).resize(2560, 1440).toBuffer()
 })
 
 cases.push({
   name: 'compress-98',
-  function: (result) => sharp(result).jpeg({quality: 98}).toBuffer()
+  function: (result) => sharp(result).jpeg({ quality: 98 }).toBuffer()
 })
 
 cases.push({
   name: 'compress-75',
-  function: (result) => sharp(result).jpeg({quality: 75}).toBuffer()
+  function: (result) => sharp(result).jpeg({ quality: 75 }).toBuffer()
 })
 
 cases.push({
@@ -50,7 +50,7 @@ cases.push({
           sigma: 3
         }
       }
-    });
+    })
     return sharp(result).composite(noise).toBuffer()
   }
 })
@@ -69,7 +69,7 @@ cases.push({
           sigma: 26
         }
       }
-    });
+    })
     return sharp(result).composite(noise).toBuffer()
   }
 })
@@ -91,25 +91,25 @@ cases.push({
 
 cases.push({
   name: 'crop-corner',
-  function: (result) => sharp(result).extract({top: 640, left: 0, width: 640, height: 360}).toBuffer()
+  function: (result) => sharp(result).extract({ top: 640, left: 0, width: 640, height: 360 }).toBuffer()
 })
 
 cases.push({
   name: 'crop-center',
-  function: (result) => sharp(result).extract({top: 640, left: 360, width: 320, height: 180}).toBuffer()
+  function: (result) => sharp(result).extract({ top: 640, left: 360, width: 320, height: 180 }).toBuffer()
 })
 
 cases.push({
   name: 'overlay',
   function: async (result) => {
-    const overlay = await sharp(fs.readFileSync(path.join(__dirname, '/images/overlay.png')));
+    const overlay = await sharp(fs.readFileSync(path.join(__dirname, '/images/overlay.png')))
     return sharp(result).composite(overlay).toBuffer()
   }
 })
 
 cases.push({
   name: 'brightness',
-  function: (result) => sharp(result).modulate({brightness: 1.05}).toBuffer()
+  function: (result) => sharp(result).modulate({ brightness: 1.05 }).toBuffer()
 })
 
 cases.push({
